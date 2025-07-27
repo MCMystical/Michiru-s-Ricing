@@ -1,2 +1,4 @@
-swww img ~/.config/BG/bg.jpg --outputs VGA-1
-swww img ~/.config/BG/BGA1.gif --outputs HDMI-A-1
+# Insert your monitors here
+
+swww img ~/.config/BG/bg.jpg --outputs YOUR_MONITOR
+swww img ~/.config/BG/BGA1.gif --outputs YOUR_MONITOR
