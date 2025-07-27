@@ -1,106 +1,50 @@
 * {
-  font-family: JetBrainsMono Nerd Font;
-  font-size: 15px;
-  min-height: 0;
+	background-image: none;
+	box-shadow: none;
 }
 
-#waybar {
-  background: transparent;
-  color: #cdd6f4;
-  margin: 5px 5px;
+window {
+	background-color: rgba(12, 12, 12, 0.5);
 }
 
-#workspaces {
-  border-radius: 1rem;
-  margin: 5px;
-  background-color: #ffffff;
-  margin-left: 1rem;
-}
-
-#workspaces button {
-  color: #de17f2;
-  border-radius: 1rem;
-  padding: 0.4rem;
-}
-
-#workspaces button.active {
-  color: #ff35c5;
-  border-radius: 1rem;
-}
-
-#workspaces button:hover {
-  color: #74c7ec;
-  border-radius: 1rem;
-}
-
-#custom-music,
-#tray,
-#backlight,
-#clock,
-#battery,
-#pulseaudio,
-#custom-lock,
-#custom-notification,
-#custom-power {
-  background-color: #ffffff;
-  padding: 0.5rem 1rem;
-  margin: 5px 0;
-}
-
-#clock {
-  color: #89b4fa;
-  border-radius: 0px 1rem 1rem 0px;
-  margin-right: 1rem;
-}
-
-#battery {
-  color: #a6e3a1;
-}
-
-#battery.charging {
-  color: #a6e3a1;
-}
-
-#battery.warning:not(.charging) {
-  color: #f38ba8;
-}
-
-#backlight {
-  color: #f9e2af;
-}
-
-#backlight, #battery {
+button {
     border-radius: 0;
+    border-color: black;
+	text-decoration-color: #FFFFFF;
+    color: #FFFFFF;
+	background-color: #fc03a5;
+	border-style: solid;
+	border-width: 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
 }
 
-#pulseaudio {
-  color: #eba0ac;
-  border-radius: 1rem 0px 0px 1rem;
-  margin-left: 1rem;
+button:focus, button:active, button:hover {
+	background-color: #c382ff;
+	outline-style: none;
 }
 
-#custom-music {
-  color: #e32bff;
-  border-radius: 1rem;
+#lock {
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
 }
 
-#custom-lock {
-    border-radius: 1rem 0px 0px 1rem;
-    color: #b4befe;
+#logout {
+    background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
 }
 
-#custom-notifcation {
-  color: #89b4fa;
-  padding: 0.5rem 1rem;
-  margin: 5px 0;
-}
-#custom-power {
-    margin-right: 1rem;
-    border-radius: 0px 1rem 1rem 0px;
-    color: #eba0ac;
+#suspend {
+    background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
 }
 
-#tray {
-  margin-right: 1rem;
-  border-radius: 1rem;
+#hibernate {
+    background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
 }
